@@ -1,0 +1,65 @@
+@import "../variables";
+
+#sidebar {
+    min-width: 300px;
+    max-width: 300px;
+    background: linear-gradient(45deg, #353d47, #21292e);
+    color: #fff;
+    transition: all 0.3s;
+    opacity: .9;
+
+    &.active {
+        margin-left: -300px;
+    }
+
+}
+
+ul.components {
+    padding: 0;
+}
+
+ul {
+    li {
+        font-size: 16px;
+
+        > ul {
+            margin-left: 15px;
+
+            li {
+                font-size: 14px;
+            }
+        }
+
+        a {
+            padding: 10px 0;
+            display: block;
+            color: rgba(255, 255, 255, .8);
+            border-bottom: 1px solid rgba(255, 255, 255, .1);
+
+            &:hover {
+                color: $primary;
+            }
+        }
+
+        &.active {
+            > a {
+                background: transparent;
+                color: $primary;
+            }
+        }
+    }
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+

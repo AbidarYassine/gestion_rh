@@ -1,0 +1,58 @@
+@import '../variables';
+@import '../admin/inc/sidebar';
+@import '../admin/inc/navbar';
+
+
+body {
+    font-family: $font-primary;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: normal;
+
+}
+
+a {
+    font-size: 17px;
+}
+
+h1, h2, h3, h4, h5, {
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: $font-primary;
+    color: black;
+}
+
+
+.wrapper {
+    width: 100%;
+}
+
+#content {
+    width: 100%;
+    padding: 10px;
+    min-height: 100vh;
+}
+
+.form-control-sm {
+    float: right;
+}
+
+.panel {
+    margin-bottom: 22px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .07);
+}
+
+.panel-body {
+    padding: 30px 20px 20px;
+    overflow: hidden;
+}
+
+.dataTables_filter, .dataTables_paginate {
+    float: right;
+
+}
+
+

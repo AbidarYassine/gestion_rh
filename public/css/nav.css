@@ -1,0 +1,37 @@
+#dropdown-menu {
+    top: 60px;
+    right: 0px;
+    left: unset;
+    width: 1000px;
+    box-shadow: 0px 5px 7px -1px #b3b0b0;
+    padding-bottom: 0px;
+    padding: 0px;
+}
+
+#dropdown-menu:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 102px;
+    border: 10px solid white;
+    border-color: transparent transparent white transparent;
+}
+
+#dropdown a:hover p {
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: rgb(0, 140, 255);
+    box-shadow: 5px 10px 18px rgb(170, 168, 168);
+}
+
+
+/*
+#dropdown a:hover p {
+    color: #0d47a1;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#nom {} */
